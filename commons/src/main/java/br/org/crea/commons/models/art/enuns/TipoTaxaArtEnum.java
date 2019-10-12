@@ -1,0 +1,82 @@
+package br.org.crea.commons.models.art.enuns;
+
+public enum TipoTaxaArtEnum {
+
+	METRAGEM_QUADRADA(new Long(1)),
+	CARGO_E_FUNCAO(new Long(2)),
+	RECEITUARIO_AGRONOMICO(new Long(3)),
+	DIREITO_AUTORAL(new Long(4)),
+	VALOR_CONTRATO_SERVICO(new Long(5)),
+	TAXA_ESPECIAL_1(new Long(6)),
+	PROJETO_MORADIA_ECONOMICA(new Long(7)),
+	TAXA_ESPECIAL_AGRONOMICA(new Long(8)),
+	LAUDO_VISTORIA_PROPRIEDADE_RURAL(new Long(9)),
+	FORNECIMENTO_CONCRETO(new Long(10)),
+	BOLETIM_PRODUCAO_AGRICOLA(new Long(36)),
+	PROJETO_DE_MORADIA_ECONOMICA(new Long(66)),
+	CONSTRUCAO_MORADIA_ECONOMICA(new Long(67)),
+	VINCULACAO_CO_AUTORIA(new Long(100)),
+	VEICULO_AUTOMOTOR(new Long(171)),
+	PROGRAMA_CASA_DA_GENTE(new Long(188)),
+	VINCULACAO_E_CO_AUTORIA(new Long(200)),
+	VINCULACAO_COAUTORIA(new Long(300)),
+	MULTIPLA(new Long(400)),
+	MULTIPLA_MENSAL_FAIXA_2(new Long(401)),
+	MULTIPLA_MENSAL_FAIXA_3(new Long(402)),
+	MULTIPLA_MENSAL_FAIXA_4(new Long(403)),
+	MULTIPLA_MENSAL_FAIXA_5(new Long(404)),
+	MULTIPLA_MENSAL_FAIXA_6(new Long(405)),
+	MULTIPLA_MENSAL_FAIXA_7(new Long(440)),
+	FORNECIMENTO_DE_CONCRETO(new Long(460)),
+	NORMA_CONFEA_FAB_E_FORNEC(new Long(500)),
+	NORMA_CONFEA_LAUDOS(new Long(550)),
+	TAXA_RESGATE_ACERVO(new Long(800)),
+	ART_CONCRETEIRA(new Long(900)),
+	PROJETO_INSTALACOES_ELETRICAS(new Long(1211)),
+	ATIVIDADE_AGRONOMICA(new Long(1502)),
+	OPERACAO_ARMAZENS_SILOS(new Long(1503)),
+	MANEJO_FLORESTAL_PLANO_CONT_AMBIENT(new Long(1504)),
+	BENEFICIAMENTO_MADEIRA(new Long(1505)),
+	ELABORACAO_PROJETO_AGRONOMICO(new Long(1506)),
+	EXECUCAO_PROJETO_AGRONOMICO(new Long(1507)),
+	PLANEJAMENTO_URBANO(new Long(1508)),
+	SERVICOS_TOPOGRAFICOS(new Long(1509)),
+	GEOLOGIA_E_MINAS(new Long(1610)),
+	TABELA_12_A(new Long(9001)),
+	TABELA_12_B(new Long(9002)),
+	TABELA_12_C(new Long(9003)),
+	TABELA_12_D(new Long(9004)),
+	TABELA_12_E(new Long(9005)),
+	TABELA_12_F(new Long(9006)),
+	TABELA_12_G(new Long(9007)),
+	TABELA_12_H(new Long(9008)),
+	TABELA_12_I(new Long(9009)),
+	TABELA_12_J(new Long(9010)),
+	TABELA_12_K(new Long(9011)),
+	TABELA_12_L(new Long(9012)),
+	TABELA_12_M(new Long(9013)),
+	TABELA_12_N(new Long(9014)),
+	TABELA_12_O(new Long(9015)),
+	TABELA_12_P(new Long(9016)),
+	TABELA_12_Q(new Long(9017)),
+	TABELA_12_R(new Long(9018)),
+	TABELA_12_S(new Long(9019)),
+	TABELA_12_T(new Long(9020)),
+	TABELA_12_U(new Long(9021)),
+	TABELA_12_V(new Long(9022)),
+	TABELA_12_W(new Long(9023)),
+	TABELA_12_X(new Long(9024)),
+	TABELA_12_Y(new Long(9025)),
+	TABELA_12_Z(new Long(9026));
+	
+	
+	private final Long id;
+	
+	TipoTaxaArtEnum(Long id) {
+		this.id = id;
+	}
+
+	public Long getId() {
+		return id;
+	}
+}

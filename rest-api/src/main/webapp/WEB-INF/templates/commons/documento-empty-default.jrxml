@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="teste" pageWidth="794" pageHeight="1122" columnWidth="667" leftMargin="85" rightMargin="42" topMargin="42" bottomMargin="42" uuid="418875b3-8828-4230-bf51-af493b5903cf">
+	<property name="ireport.zoom" value="0.7513148009015876"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="Table Dataset 1" uuid="19c32c99-15d4-4fe5-992a-e389dffb4a18"/>
+	<parameter name="BRASAO" class="java.io.InputStream"/>
+	<parameter name="ASSINATURA" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="textoPrincipal" class="java.lang.String">
+		<fieldDescription><![CDATA[textoPrincipal]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="800" splitType="Stretch">
+			<elementGroup>
+				<elementGroup/>
+			</elementGroup>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="3" width="667" height="797" isRemoveLineWhenBlank="true" uuid="ce9d253a-2828-4a7c-992b-dc4c51b0d1b7">
+					<printWhenExpression><![CDATA[($F{textoPrincipal} != "")]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="Verdana" size="14"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{textoPrincipal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+</jasperReport>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>br.org.crea</groupId>
+	<artifactId>crea-api</artifactId>
+	<name>crea-api</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<modules>
+		<module>commons</module>
+		<module>rest-api</module>
+		<module>corporativo</module>
+		<module>cadastro</module>
+		<module>portal</module>
+		<module>atendimento</module>
+		<module>financeiro</module>
+		<module>art</module>
+		<module>siacol</module>
+		<module>protocolo</module>
+  </modules>
+
+	<description>Sistema crea</description>
+	<url>http://www.crea.org.br/api</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<developers>
+		<developer>
+			<id>Ricardo</id>
+			<name>Ricardo Leite</name>
+			<email>ricardo.leite@crea.org.br</email>
+			<organization>CREA - RJ</organization>
+			<organizationUrl>http://www.org.com.br</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>Jeferson</id>
+			<name>Jeferson Nascimento</name>
+			<email>jeferson.nascimento@crea-rj.org.br</email>
+			<organization>CREA - RJ</organization>
+			<organizationUrl>http://www.crea.org.br</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+	</developers>
+
+	<organization>
+		<name>crea</name>
+		<url>http://www.crea.org.br</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<distribution>repo</distribution>
+			<name>Apache License, Version 2.0</name>
+			<url>http://apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>1.1.0.Alpha5</version>		
+				<configuration>
+					<hostname>127.0.0.1</hostname>
+					<port>9990</port>
+					<username>rodrigo</username>
+					<password>1234</password>
+					<name>rest-api.war</name>
+				</configuration>		
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

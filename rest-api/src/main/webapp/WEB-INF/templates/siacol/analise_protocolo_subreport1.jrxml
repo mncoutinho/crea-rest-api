@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="analise_protocolo_subreport1" pageWidth="572" pageHeight="752" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="0a7eea2d-6592-4f6a-adb7-a242afbd1a73">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="atribuicoesTitulo" class="java.lang.String">
+		<fieldDescription><![CDATA[atribuicoesTitulo]]></fieldDescription>
+	</field>
+	<field name="codigoTituloConfea" class="java.lang.Long">
+		<fieldDescription><![CDATA[codigoTituloConfea]]></fieldDescription>
+	</field>
+	<field name="codigoTituloCrea" class="java.lang.Long">
+		<fieldDescription><![CDATA[codigoTituloCrea]]></fieldDescription>
+	</field>
+	<field name="dispositivosAtribuicaoTitulo" class="java.util.List">
+		<fieldDescription><![CDATA[dispositivosAtribuicaoTitulo]]></fieldDescription>
+	</field>
+	<field name="escolaridade" class="java.lang.String">
+		<fieldDescription><![CDATA[escolaridade]]></fieldDescription>
+	</field>
+	<field name="escolaDeObtencaoTitulo" class="java.lang.String">
+		<fieldDescription><![CDATA[escolaDeObtencaoTitulo]]></fieldDescription>
+	</field>
+	<field name="estadoEscolaObtencaoTitulo" class="java.lang.String">
+		<fieldDescription><![CDATA[estadoEscolaObtencaoTitulo]]></fieldDescription>
+	</field>
+	<field name="tituloConfea" class="java.lang.String">
+		<fieldDescription><![CDATA[tituloConfea]]></fieldDescription>
+	</field>
+	<field name="tituloCrea" class="java.lang.String">
+		<fieldDescription><![CDATA[tituloCrea]]></fieldDescription>
+	</field>
+	<field name="estadoEscola" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50">
+			<staticText>
+				<reportElement x="17" y="30" width="100" height="20" uuid="77dbc15d-338c-4663-b337-248ad56b8079"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TÍTULOS:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="256" splitType="Stretch">
+			<staticText>
+				<reportElement x="17" y="16" width="85" height="20" uuid="1d09b57d-ae0d-4009-ad68-375741ed1631"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TÍTULO SIC:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement x="102" y="16" width="470" height="20" uuid="d1b237a8-d505-4af2-afd3-523cdc2023ea"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tituloConfea}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="46" width="100" height="20" uuid="0e172745-c633-4ac0-8787-487fcdba3f6c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TÍTULO CREA:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="119" y="46" width="453" height="20" uuid="5a55b176-41b1-48dc-891e-0c678cf0dcce"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tituloCrea}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="17" y="78" width="100" height="20" uuid="7e9b605d-c384-4503-bbb3-eff3557c7f10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESCOLA:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="117" y="78" width="455" height="20" uuid="044b9e55-3436-4ebf-a4e9-a2804f7d9547"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{escolaDeObtencaoTitulo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="17" y="108" width="120" height="20" uuid="86abb39c-ac2e-43a5-a4fd-1d15631621e6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESTADO ESCOLA:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="137" y="108" width="435" height="20" uuid="875438ea-884a-4cd8-8e7a-b1744468cc40"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{estadoEscola}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="37" y="168" width="520" height="67" uuid="0411542c-a98f-43c4-8d21-2edd8567a0b5"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Verdana"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{atribuicoesTitulo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="17" y="137" width="120" height="20" uuid="b5cceb66-48c1-4da2-b532-6a956aaa7199"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ATRIBUIÇÕES:]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE irfonts.xml>
+<fontFamilies>
+   <fontFamily name="Arial">
+       <normal><![CDATA[arial.ttf]]></normal>
+       <normal><![CDATA[Verdana.ttf]]></normal>
+       <bold><![CDATA[arialbd.ttf]]></bold>
+       <pdfEmbedded><![CDATA[false]]></pdfEmbedded>
+   </fontFamily>
+   <fontFamily name="Verdana">
+       <normal><![CDATA[Verdana.ttf]]></normal>
+       <pdfEmbedded><![CDATA[false]]></pdfEmbedded>
+   </fontFamily>
+
+</fontFamilies>
+
+

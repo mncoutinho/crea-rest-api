@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<jboss-deployment-structure>  
+    <deployment>  
+         <dependencies>  
+              <module name="org.apache.poi" />
+              <module name="org.apache.poi.poi-ooxml" />
+              <module name="org.apache.poi.poi-ooxml-schemas" />
+              <module name="javax.servlet.api" />
+              <module name="net.sf.jasperreports" />
+              <module name="org.jboss.resteasy.jose-jwt" />
+              <module name="org.hibernate" />
+              <module name="net.sf.cssbox.pdf2dom" />
+              <module name="com.validcertificadora.itext" />
+              <module name="javax.javaee-api" />
+              <module name="com.lowagie.itext" />
+              <module name="org.jboss.resteasy.resteasy-jackson-provider" />
+              <module name="org.codehaus.jackson.jackson-core-asl" />
+              <module name="org.codehaus.jackson.jackson-jaxrs" />
+              <module name="org.codehaus.jackson.jackson-mapper-asl" />
+              <module name="org.codehaus.jackson.jackson-xc" />
+              <module name="org.jboss.resteasy.resteasy-multipart-provider" />
+              <module name="javax.enterprise.cdi-api" />
+              <module name="com.thetransactioncompany.cors-filter" />
+              <module name="jfree.jcommon" />
+              <module name="eu.bitwalker.UserAgentUtils" />
+              <module name="dom4j" />
+              <module name="org.hibernate.javax.persistence.hibernate-jpa-2.1-api" />
+              <module name="org.quartz-scheduler.quartz" />
+              <module name="org.quartz-scheduler.quartz-jobs" />
+              <module name="com.google.code.gson" />
+              <module name="br.com.caelum.stella.caelum-stella-bean-validation" />
+              <module name="br.com.caelum.stella.caelum-stella-core" />
+              <module name="org.apache.httpcomponents.httpclient" />
+              <module name="org.apache.httpcomponents.httpcore" />
+              <module name="org.apache.commons.commons-io" />
+              <module name="redis.clients.jedis" />
+              <module name="com.oracle.ojdbc6" />
+              <module name="javax.api" />
+              <module name="org.apache.commons.codec" />
+              <module name="org.eclipse.jdt.core.compiler.ecj" />
+              <module name="org.apache.commons.commons-collections4" />
+              <module name="stax.stax-api" />
+              
+              
+        </dependencies>  
+    </deployment>  
+</jboss-deployment-structure>

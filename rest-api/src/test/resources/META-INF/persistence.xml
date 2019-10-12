@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="dsCreaTest"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<!-- <mapping-file>META-INF/orm.xml</mapping-file> -->
+
+
+	<!-- CADASTRO -->
+		<class>br.org.crea.commons.models.cadastro.Atividade</class>
+		<class>br.org.crea.commons.models.cadastro.Acoes</class>
+		<class>br.org.crea.commons.models.cadastro.QuadroTecnico</class>
+		<class>br.org.crea.commons.models.cadastro.TipoVinculoQuadroTecnico</class>
+		<class>br.org.crea.commons.models.cadastro.Ramo</class>
+		<class>br.org.crea.commons.models.cadastro.RamoAtividade</class>
+		<class>br.org.crea.commons.models.cadastro.ResponsavelTecnico</class>
+		<class>br.org.crea.commons.models.cadastro.UnidadeAtendimento</class>
+		<class>br.org.crea.commons.models.cadastro.InstituicaoEnsino</class> 	
+		<class>br.org.crea.commons.models.cadastro.TipoSexo</class> 	
+		<class>br.org.crea.commons.models.cadastro.Escolaridade</class>
+		<class>br.org.crea.commons.models.cadastro.Especialidade</class>
+		<class>br.org.crea.commons.models.cadastro.RlProfissionalEspecialidade</class>
+		<class>br.org.crea.commons.models.cadastro.ConfeaTitulo</class>
+		<class>br.org.crea.commons.models.cadastro.Titulo</class>
+		<class>br.org.crea.commons.models.cadastro.EmailPessoa</class>
+		<class>br.org.crea.commons.models.cadastro.EntidadeProfissionais</class>
+		<class>br.org.crea.commons.models.cadastro.EntidadeClasse</class>
+		<class>br.org.crea.commons.models.cadastro.Taxa</class>
+		<class>br.org.crea.commons.models.cadastro.Natureza</class>
+		<class>br.org.crea.commons.models.cadastro.UnidadeMedida</class>
+		<class>br.org.crea.commons.models.cadastro.Modalidade</class>
+		<class>br.org.crea.commons.models.cadastro.RequerimentoPJ</class>
+		<class>br.org.crea.commons.models.cadastro.ObjetoSocial</class>
+		<class>br.org.crea.commons.models.cadastro.Documento</class>
+		<class>br.org.crea.commons.models.cadastro.StatusDocumento</class>
+		<class>br.org.crea.commons.models.cadastro.TipoDocumento</class>
+		<class>br.org.crea.commons.models.cadastro.LogRequerimento</class>
+		<class>br.org.crea.commons.models.cadastro.Auditoria</class>
+		<class>br.org.crea.commons.models.cadastro.Cargo</class>
+	    <class>br.org.crea.commons.models.cadastro.Departamento</class>
+	    <class>br.org.crea.commons.models.cadastro.Evento</class>
+	    <class>br.org.crea.commons.models.cadastro.Carteira</class>
+	    <class>br.org.crea.commons.models.cadastro.CarteiraFila</class>
+	    <class>br.org.crea.commons.models.cadastro.TipoCarteira</class>
+	    <class>br.org.crea.commons.models.cadastro.HomePage</class>
+	    <class>br.org.crea.commons.models.cadastro.Nacionalidade</class>
+	    <class>br.org.crea.commons.models.cadastro.EstadoCivil</class>
+	    <class>br.org.crea.commons.models.cadastro.NecessidadeEspecial</class>
+	    <class>br.org.crea.commons.models.cadastro.FatorRh</class>
+	    <class>br.org.crea.commons.models.cadastro.TipoTitulo</class>
+	    <class>br.org.crea.commons.models.cadastro.Historico</class>
+	    <class>br.org.crea.commons.models.cadastro.OrgaoEmissorIdentidade</class>
+	    <class>br.org.crea.commons.models.cadastro.TipoSolicitacaoRPJ</class>
+	    <class>br.org.crea.commons.models.cadastro.CursoCadastro</class>
+	    <class>br.org.crea.commons.models.cadastro.CampusCadastro</class>
+	    <class>br.org.crea.commons.models.cadastro.Certidao</class>
+	    <class>br.org.crea.commons.models.cadastro.MotivoCancelamentoCertidao</class>
+	    <class>br.org.crea.commons.models.cadastro.TipoCertidao</class>
+	    <class>br.org.crea.commons.models.cadastro.PremioTCT</class>
+	    <class>br.org.crea.commons.models.cadastro.ParticipantePremioTCT</class>
+	    <class>br.org.crea.commons.models.cadastro.NumeroDocumento</class>
+		<class>br.org.crea.commons.models.cadastro.RlModalidadeDepartamento</class>
+
+		<!-- FINANCEIRO -->
+		<class>br.org.crea.commons.models.financeiro.FinDivida</class>
+		<class>br.org.crea.commons.models.financeiro.NaturezaDivida</class>
+		<class>br.org.crea.commons.models.financeiro.StatusDivida</class>
+		<class>br.org.crea.commons.models.financeiro.Parcelamento</class>
+		<class>br.org.crea.commons.models.financeiro.FinParcelamentoDivida</class> 	
+		<class>br.org.crea.commons.models.financeiro.FinTermosInscricao</class> 
+		<class>br.org.crea.commons.models.financeiro.GeradorSequenciaOficio</class> 
+		<class>br.org.crea.commons.models.financeiro.RlTermoInscricaoDivida</class> 
+		<class>br.org.crea.commons.models.financeiro.FinLocalPagamento</class>
+		<class>br.org.crea.commons.models.financeiro.FinMoeda</class>
+		<class>br.org.crea.commons.models.financeiro.Boleto</class>
+		<class>br.org.crea.commons.models.financeiro.FinGeradorNossoNumero</class>
+		<class>br.org.crea.commons.models.financeiro.FinPrecoTaxa</class>
+		<class>br.org.crea.commons.models.financeiro.RlDividaBoleto</class>
+		<class>br.org.crea.commons.models.financeiro.Banco</class>
+		<class>br.org.crea.commons.models.financeiro.FinDevolucao</class>
+		
+		<!-- FISCALIZACAO -->
+		<class>br.org.crea.commons.models.fiscalizacao.ContratoAtividade</class>
+		<class>br.org.crea.commons.models.fiscalizacao.ContratoServico</class>
+		<class>br.org.crea.commons.models.fiscalizacao.ContratoInativado</class>
+					
+		<!-- COMMONS -->
+		<class>br.org.crea.commons.models.commons.Protocolo</class>
+		<class>br.org.crea.commons.models.commons.Movimento</class>
+		<class>br.org.crea.commons.models.commons.ObservacoesMovimento</class>
+		<class>br.org.crea.commons.models.commons.SituacaoProtocolo</class>
+		<class>br.org.crea.commons.models.commons.InstituicaoEnsinoAtu</class>
+		<class>br.org.crea.commons.models.commons.Curso</class>
+		<class>br.org.crea.commons.models.commons.Campus</class>
+		<class>br.org.crea.commons.models.commons.Endereco</class>
+		<class>br.org.crea.commons.models.commons.TipoEndereco</class>
+		<class>br.org.crea.commons.models.commons.TipoLogradouro</class>
+		<class>br.org.crea.commons.models.commons.TipoAtendimento</class>
+		<class>br.org.crea.commons.models.commons.Localidade</class>
+		<class>br.org.crea.commons.models.commons.Logradouro</class>
+		<class>br.org.crea.commons.models.commons.Municipio</class>
+		<class>br.org.crea.commons.models.commons.Bairro</class>
+		<class>br.org.crea.commons.models.commons.UF</class> 
+		<class>br.org.crea.commons.models.commons.GeradorSequencia</class> 	
+		<class>br.org.crea.commons.models.commons.Telefone</class>
+		<class>br.org.crea.commons.models.commons.TipoTelefone</class>
+		<class>br.org.crea.commons.models.commons.Eprocesso</class>
+		<class>br.org.crea.commons.models.commons.Arquivo</class>
+		<class>br.org.crea.commons.models.commons.EmailEnvio</class>
+		<class>br.org.crea.commons.models.commons.EventoEmail</class>
+		<class>br.org.crea.commons.models.commons.Cointeressado</class>
+					
+		<!-- ATENDIMENTO -->
+		<class>br.org.crea.commons.models.atendimento.AgendamentoMobile</class>
+		<class>br.org.crea.commons.models.atendimento.StatusAgendamentoMobile</class>
+		<class>br.org.crea.commons.models.atendimento.SituacaoAtendimento</class>
+		<class>br.org.crea.commons.models.atendimento.AssuntoMobile</class>
+		<class>br.org.crea.commons.models.atendimento.PermissaoAtendimento</class>
+		<class>br.org.crea.commons.models.atendimento.RlAutorizacaoAtendimento</class> 	
+		<class>br.org.crea.commons.models.atendimento.Ouvidoria</class> 
+		<class>br.org.crea.commons.models.atendimento.OuvidoriaTipoDemanda</class> 
+		<class>br.org.crea.commons.models.atendimento.OuvidoriaAssunto</class>
+		<class>br.org.crea.commons.models.atendimento.OuvidoriaOrigem</class>  
+		<class>br.org.crea.commons.models.atendimento.OuvidoriaFormaAtendimento</class>
+		<class>br.org.crea.commons.models.atendimento.OuvidoriaSituacoes</class>
+		<class>br.org.crea.commons.models.atendimento.OuvidoriaAssuntosGerais</class>
+		<class>br.org.crea.commons.models.atendimento.OuvidoriaAssuntosEspecificos</class>
+					
+		<!-- CORPORATIVO -->
+		<class>br.org.crea.commons.models.corporativo.Assunto</class>
+		<class>br.org.crea.commons.models.corporativo.RazaoSocial</class>
+		<class>br.org.crea.commons.models.corporativo.SituacaoRegistro</class> 
+		<class>br.org.crea.commons.models.corporativo.Documentacao</class> 
+		<class>br.org.crea.commons.models.corporativo.BlocosAssuntos</class>
+		<class>br.org.crea.commons.models.corporativo.personalidade.entity.CargoPersonalidade</class>
+	    <class>br.org.crea.commons.models.corporativo.personalidade.entity.CargoConselheiro</class> 
+	    <class>br.org.crea.commons.models.corporativo.personalidade.entity.AjudaCusto</class> 
+	    <class>br.org.crea.commons.models.corporativo.personalidade.entity.Personalidade</class>         
+			    	    
+		<!-- CORPORATIVO.PESSOA -->
+		<class>br.org.crea.commons.models.corporativo.pessoa.Empresa</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.Funcionario</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.LeigoPF</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.LeigoPJ</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.Pessoa</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.PessoaFisica</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.PessoaJuridica</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.Profissional</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.Formando</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.TipoEmpresa</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.TipoCategoriaRegistro</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.TipoGrupo</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.TipoClasseEmpresa</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.CapitalSocial</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.ComposicaoSocietaria</class>
+		<class>br.org.crea.commons.models.corporativo.pessoa.TipoCapitalSocial</class>
+			    	     
+		<!-- COMMONS.ART -->
+		<class>br.org.crea.commons.models.art.Art</class>
+		<class>br.org.crea.commons.models.art.ArtNaoCobrarIncorporacao</class>
+		<class>br.org.crea.commons.models.art.ArtNaoRecalcular</class>
+		<class>br.org.crea.commons.models.art.ArtValoresReprocessados</class>
+		<class>br.org.crea.commons.models.art.ArtClasseProduto</class>
+		<class>br.org.crea.commons.models.art.ArtClasseToxicologica</class>
+		<class>br.org.crea.commons.models.art.ArtCultura</class>
+		<class>br.org.crea.commons.models.art.ArtDiagnostico</class>
+		<class>br.org.crea.commons.models.art.ArtGrupoQuimico</class>
+		<class>br.org.crea.commons.models.art.ArtIngredienteAtivo</class>
+		<class>br.org.crea.commons.models.art.ArtProduto</class>
+		<class>br.org.crea.commons.models.art.ArtReceita</class>
+		<class>br.org.crea.commons.models.art.ArtReceitaProduto</class>
+		<class>br.org.crea.commons.models.art.AtividadeTecnicaArt</class>
+		<class>br.org.crea.commons.models.art.ComplementoArt</class>
+		<class>br.org.crea.commons.models.art.ContratoArt</class>
+		<class>br.org.crea.commons.models.art.ConvenioPublico</class>
+		<class>br.org.crea.commons.models.art.EspecificacaoAtividadeArt</class>
+		<class>br.org.crea.commons.models.art.NaturezaArt</class>
+		<class>br.org.crea.commons.models.art.TipoArt</class> 	
+		<class>br.org.crea.commons.models.art.RamoArt</class> 	
+		<class>br.org.crea.commons.models.art.BaixaArt</class> 	
+		<class>br.org.crea.commons.models.art.FatoGeradorArt</class>
+		<class>br.org.crea.commons.models.art.GeradorSequenciaArt</class>
+		<class>br.org.crea.commons.models.art.ArtQuantificacao</class>
+		<class>br.org.crea.commons.models.art.TaxaEspecialMetroQuadrado</class>
+		<class>br.org.crea.commons.models.art.ContratoArtAtividade</class>
+		<class>br.org.crea.commons.models.art.ContratoArtComplemento</class>
+		<class>br.org.crea.commons.models.art.ContratoArtEspecificacao</class>
+		<class>br.org.crea.commons.models.art.ContratoArtTipoUnidadeAdministrativa</class>
+		<class>br.org.crea.commons.models.art.ContratoArtTipoAcaoInstitucional</class>
+		<class>br.org.crea.commons.models.art.ContratoArtTipoCargoFuncao</class>
+		<class>br.org.crea.commons.models.art.ContratoArtTipoContratante</class>
+		<class>br.org.crea.commons.models.art.ContratoArtTipoFuncao</class>
+		<class>br.org.crea.commons.models.art.ContratoArtTipoVinculo</class>
+		<class>br.org.crea.commons.models.art.ArtTipoTaxa</class>
+		<class>br.org.crea.commons.models.art.ContratoArtFinalidade</class>
+		<class>br.org.crea.commons.models.art.ArtCUB</class>
+		<class>br.org.crea.commons.models.art.ArtExigencia</class>
+		<class>br.org.crea.commons.models.art.ExigenciaArt</class>
+		<class>br.org.crea.commons.models.art.ArtTipoAcao</class>
+		<class>br.org.crea.commons.models.art.ArtSituacaoLiberacao</class>
+		<class>br.org.crea.commons.models.art.ArtLog</class>
+		<class>br.org.crea.commons.models.art.ParticipacaoTecnicaArt</class>
+		<class>br.org.crea.commons.models.art.ArtLivroOrdem</class>
+			
+		<!-- PORTAL -->
+		<class>br.org.crea.commons.models.portal.Atendimento</class>
+		<class>br.org.crea.commons.models.portal.AtendimentoLog</class>
+
+		<!-- SIACOL -->
+		<class>br.org.crea.commons.models.siacol.AssuntoConfea</class>
+		<class>br.org.crea.commons.models.siacol.AssuntoSiacol</class>
+		<class>br.org.crea.commons.models.siacol.ConfigPessoaSiacol</class>
+		<class>br.org.crea.commons.models.siacol.ConselheiroRegionalSiacol</class>
+		<class>br.org.crea.commons.models.siacol.CargosReuniaoSiacol</class>
+	    <class>br.org.crea.commons.models.siacol.HabilidadePessoaSiacol</class>
+		<class>br.org.crea.commons.models.siacol.ParteTexto</class>
+	    <class>br.org.crea.commons.models.siacol.ProtocoloSiacol</class>
+		<class>br.org.crea.commons.models.siacol.RlAssuntosSiacol</class>	
+		<class>br.org.crea.commons.models.siacol.ReuniaoSiacol</class>	
+		<class>br.org.crea.commons.models.siacol.VotoReuniaoSiacol</class>	
+		<class>br.org.crea.commons.models.siacol.RlDocumentoProtocoloSiacol</class>	
+		<class>br.org.crea.commons.models.siacol.RlProtocoloResponsavelSiacol</class>
+		<class>br.org.crea.commons.models.siacol.RlCargoConselheiroSiacol</class>
+		<class>br.org.crea.commons.models.siacol.RlEmailReuniaoSiacol</class>
+		<class>br.org.crea.commons.models.siacol.RlReuniaoRelatorioSiacol</class>
+		<class>br.org.crea.commons.models.siacol.EmailConselheiro</class>
+		<class>br.org.crea.commons.models.siacol.AnexosItemPautaReuniaoSiacol</class>	
+		<class>br.org.crea.commons.models.siacol.StatusItemPauta</class>
+		<class>br.org.crea.commons.models.siacol.SiacolProtocoloExigencia</class>
+		<class>br.org.crea.commons.models.siacol.PersonalidadeSiacol</class>
+		<class>br.org.crea.commons.models.siacol.PresencaReuniaoSiacol</class>
+		<class>br.org.crea.commons.models.siacol.SiacolTags</class>
+		<class>br.org.crea.commons.models.siacol.SiacolRlProtocoloTags</class>
+		<class>br.org.crea.commons.models.siacol.RlDeclaracaoVoto</class>
+		<class>br.org.crea.commons.models.siacol.SiacolProtocoloHistoricoSaida</class>
+		
+		<!-- PROTOCOLO -->
+		<class>br.org.crea.commons.models.protocolo.ObservacaoProtocolo</class>
+		<class>br.org.crea.commons.models.protocolo.PermissaoProtocolo</class>
+		<class>br.org.crea.commons.models.protocolo.RlAutorizacaoProtocolo</class>
+		<class>br.org.crea.commons.models.protocolo.ProtocoloDemanda</class>
+		<class>br.org.crea.commons.models.protocolo.TipoDemanda</class>
+
+		<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+
+
+		 <!--  DESENVOLVIMENTO-->
+
+		<properties>
+			<property name="hibernate.show_sql" value="true" />
+  	   		<property name="hibernate.format_sql" value="true" />
+  	   		<property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/>
+  	   		<!-- <property name="hibernate.connection.url" value="jdbc:oracle:thin:@200.165.167.10:7344:IASDB1" /> -->
+  	   		<!-- <property name="hibernate.connection.url" value="jdbc:oracle:thin:@200.165.167.10:7349:IASDB1" />--> 
+  	   		<property name="hibernate.connection.url" value="jdbc:oracle:thin:@192.168.10.95:1521:IASDB1" /> 
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle9iDialect" />
+  	   		<property name="hibernate.connection.username" value="corporativo" />
+			<property name="hibernate.connection.password" value="Jcd9ysEfY7Y4ap" />  
+			<!--  <property name="hibernate.connection.password" value="crearjsiacol" /> -->
+		</properties> 
+
+<!-- 
+		<properties>
+
+			<property name="hibernate.connection.driver_class"
+				value="oracle.jdbc.driver.OracleDriver" />
+			<property name="hibernate.connection.url"
+				value="jdbc:oracle:thin:@192.168.10.40:1521:IASDB1" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.Oracle9iDialect" />
+			<property name="hibernate.connection.username"
+				value="corporativo" />
+			<property name="hibernate.connection.password"
+				value="N6MK9DPL68m6Z3VQCC" />
+		</properties>
+-->
+<!-- 
+		 <properties> <property name="hibernate.show_sql" value="true" /> <property 
+			name="hibernate.format_sql" value="true" /> <property name="hibernate.show_sql" 
+			value="true" /> <property name="hibernate.format_sql" value="true" /> <property 
+			name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/> 
+			<property name="hibernate.connection.url" value="jdbc:oracle:thin:@192.168.10.40:1521:IASDB1" 
+			/> <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle9iDialect" 
+			/> <property name="hibernate.connection.username" value="corporativo" /> 
+			<property name="hibernate.connection.password" value="N6MK9DPL68m6Z3VQCC" 
+			/> </properties> 
+ -->
+
+	</persistence-unit>
+</persistence>

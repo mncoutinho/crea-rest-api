@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="oficio-ie-curso-nao-cadastrado" pageWidth="595" pageHeight="842" columnWidth="468" leftMargin="85" rightMargin="42" topMargin="42" bottomMargin="42" uuid="418875b3-8828-4230-bf51-af493b5903cf">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="BRASAO" class="java.io.InputStream"/>
+	<parameter name="ASSINATURA" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="assunto" class="java.lang.String">
+		<fieldDescription><![CDATA[assunto]]></fieldDescription>
+	</field>
+	<field name="enderecoDescritivo" class="java.lang.String">
+		<fieldDescription><![CDATA[enderecoDescritivo]]></fieldDescription>
+	</field>
+	<field name="oficiado" class="java.lang.String">
+		<fieldDescription><![CDATA[oficiado]]></fieldDescription>
+	</field>
+	<field name="referencia" class="java.lang.String">
+		<fieldDescription><![CDATA[referencia]]></fieldDescription>
+	</field>
+	<field name="textoPrincipal" class="java.lang.String">
+		<fieldDescription><![CDATA[textoPrincipal]]></fieldDescription>
+	</field>
+	<field name="numeroDocumento" class="java.lang.String"/>
+	<field name="dataDocumento" class="java.lang.String"/>
+	<field name="cargo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="113" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="70" width="468" height="20" uuid="12a1b0ab-7e61-41ac-abee-770d5f82bffd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO RIO DE JANEIRO-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="90" width="100" height="20" uuid="b8ebc734-f7ac-4eab-91b6-8c2dd59eb572"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CREA-RJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="468" height="20" uuid="8a692c69-0ed1-47ae-94fb-34ff50d34bce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SERVIÇO PÚBLICO FEDERAL]]></text>
+			</staticText>
+			<image>
+				<reportElement x="206" y="0" width="100" height="50" uuid="381283d0-090d-4920-95e7-ff5ed200d215"/>
+				<imageExpression><![CDATA[$P{BRASAO}]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="607" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="49" width="467" height="42" uuid="d1a93b5f-03d0-4cdf-97fc-926024c0a09b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMPROVANTE DE MOVIMENTAÇÃO DE PROTOCOLO DO PORTAL
+BAIXA DE QUADRO TÉCNICO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="130" width="467" height="368" uuid="f5ae57f6-125d-4dc5-8181-91f137f50848"/>
+				<textElement textAlignment="Justified" markup="none">
+					<font fontName="Verdana"/>
+					<paragraph lineSpacing="1_1_2" firstLineIndent="57"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{textoPrincipal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="0" width="467" height="38" uuid="a2fa585e-86d7-4665-8467-429dd3c27afd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" size="8"/>
+				</textElement>
+				<text><![CDATA[
+Rua Buenos Aires, nº 40 - Centro - 20.070-022 - Rio de Janeiro - RJ
+crea-rj@crea-rj.org.br - www.crea-rj.org.br]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="detalhe-art" pageWidth="595" pageHeight="842" columnWidth="468" leftMargin="85" rightMargin="42" topMargin="42" bottomMargin="0" uuid="cc3348ca-3d9b-43c8-a535-8f5c795fc07c">
+	<property name="ireport.zoom" value="1.3310000000000384"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<subDataset name="dataset1" uuid="1c9ced9f-a45f-4010-81fe-4aac568f19ee"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/home/ricardo/projects/java/crea_api/crea-rest-api/rest-api/src/main/webapp/WEB-INF/templates/"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="numero" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="295" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="113" width="459" height="32" uuid="a48c716a-c024-4d91-a2f4-0f9b7c923224"/>
+				<textElement textAlignment="Center">
+					<font fontName="Verdana" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO RIO DE JANEIRO - CREA-RJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="276" width="87" height="19" uuid="5680ba3c-fcf9-4689-9f56-db416e293bbb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RNP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="276" width="94" height="19" uuid="454d6ef4-55f4-4b41-85bf-eca4af27d093"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="147" width="322" height="20" forecolor="#0103A4" uuid="0e035a19-072f-42bb-9d61-c9f6586ae743"/>
+				<textElement textAlignment="Center">
+					<font fontName="Verdana"/>
+				</textElement>
+				<text><![CDATA[RELAÇÃO DE PARTICIPANTES DA ENTREGA DE CARTEIRAS EM ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="92" width="169" height="21" uuid="919bc51e-de98-464c-99a1-0d1ba48c3b16"/>
+				<textElement textAlignment="Center">
+					<font fontName="Verdana" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SERVIÇO PÚBLICO FEDERAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="68" y="211" width="100" height="20" uuid="60009b4c-99c4-401e-accd-442f0404b982"/>
+				<textFieldExpression><![CDATA[$F{numero}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="17">
+			<line>
+				<reportElement x="1" y="0" width="468" height="1" uuid="75007098-24fb-40ca-8a7f-a6c0af508359"/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="64">
+			<textField>
+				<reportElement x="281" y="19" width="179" height="20" uuid="b1efc46e-3c73-4f4a-8d4b-3c4cb2ecbc7b"/>
+				<textElement textAlignment="Right">
+					<font fontName="Verdana" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="460" y="19" width="122" height="20" uuid="7cf5bdb0-f8a1-49bd-bc71-d8c236a887cd"/>
+				<textElement>
+					<font fontName="Verdana" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

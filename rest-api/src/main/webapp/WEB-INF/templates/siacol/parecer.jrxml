@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="teste" pageWidth="595" pageHeight="842" columnWidth="467" leftMargin="85" rightMargin="43" topMargin="43" bottomMargin="43" isIgnorePagination="true" uuid="418875b3-8828-4230-bf51-af493b5903cf">
+	<property name="ireport.zoom" value="2.357947691000008"/>
+	<property name="ireport.x" value="179"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="BRASAO" class="java.io.InputStream"/>
+	<parameter name="ASSINATURA" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="referencia" class="java.lang.String">
+		<fieldDescription><![CDATA[referencia]]></fieldDescription>
+	</field>
+	<field name="interessado" class="java.lang.String">
+		<fieldDescription><![CDATA[interessado]]></fieldDescription>
+	</field>
+	<field name="origem" class="java.lang.String">
+		<fieldDescription><![CDATA[origem]]></fieldDescription>
+	</field>
+	<field name="numeroDocumento" class="java.lang.String">
+		<fieldDescription><![CDATA[numeroDocumento]]></fieldDescription>
+	</field>
+	<field name="ementa" class="java.lang.String">
+		<fieldDescription><![CDATA[ementa]]></fieldDescription>
+	</field>
+	<field name="textoPrincipal" class="java.lang.String">
+		<fieldDescription><![CDATA[textoPrincipal]]></fieldDescription>
+	</field>
+	<field name="dataDocumento" class="java.lang.String">
+		<fieldDescription><![CDATA[dataDocumento]]></fieldDescription>
+	</field>
+	<field name="nomeResponsavel" class="java.lang.String">
+		<fieldDescription><![CDATA[nomeResponsavel]]></fieldDescription>
+	</field>
+	<field name="cargo" class="java.lang.String">
+		<fieldDescription><![CDATA[cargo]]></fieldDescription>
+	</field>
+	<field name="matricula" class="java.lang.String">
+		<fieldDescription><![CDATA[matricula]]></fieldDescription>
+	</field>
+	<field name="assinado" class="java.lang.String">
+		<fieldDescription><![CDATA[assinado]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="135" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="71" width="468" height="20" isRemoveLineWhenBlank="true" uuid="5e62b762-a7ec-495f-ad2e-047e0e56d7d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[SERVIÇO PÚBLICO FEDERAL]]></text>
+			</staticText>
+			<image hAlign="Center" isUsingCache="true">
+				<reportElement x="163" y="0" width="143" height="71" isRemoveLineWhenBlank="true" uuid="e6ef32d7-440e-4f2a-b1c4-974b7ce90673"/>
+				<imageExpression><![CDATA[$P{BRASAO}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="96" width="468" height="20" isRemoveLineWhenBlank="true" uuid="0f8cf0e5-d96a-47af-ab0c-7bfe6ba73d9e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO RIO DE JANEIRO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="110" width="468" height="20" isRemoveLineWhenBlank="true" uuid="e73b9714-beb1-4a4f-9199-a323c414ffee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[CREA-RJ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="260" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="60" width="468" height="198" forecolor="#CCCCCC" uuid="55f04bd8-9e5c-45ac-a27f-65a83790579b">
+					<printWhenExpression><![CDATA[$F{assinado} != "true"]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="100" isBold="true" isPdfEmbedded="false"/>
+					<paragraph spacingBefore="40"/>
+				</textElement>
+				<text><![CDATA[MINUTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="94" height="20" isRemoveLineWhenBlank="true" uuid="d1a93b5f-03d0-4cdf-97fc-926024c0a09b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[REFERÊNCIA :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="79" y="0" width="390" height="20" isRemoveLineWhenBlank="true" uuid="e65b8cb2-0ec5-40da-bc4b-52d5d78a72d3"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{referencia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="13" width="107" height="20" isRemoveLineWhenBlank="true" uuid="291d8a86-c624-4b90-86bd-72485043b870"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[INTERESSADO :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="89" y="13" width="379" height="20" isRemoveLineWhenBlank="true" uuid="6309bc76-c5bc-4124-b5ec-0103288ca193"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{interessado}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="27" width="75" height="20" isRemoveLineWhenBlank="true" uuid="75f161e5-a23b-44a8-97d0-e79ab79719f5"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ORIGEM :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="58" y="27" width="410" height="20" isRemoveLineWhenBlank="true" uuid="203719b0-436b-4111-981b-1960c12fe202"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{origem}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="140" y="72" width="162" height="20" isRemoveLineWhenBlank="true" uuid="8704204b-41a0-48d4-9ce2-83974ed66c2a"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[PARECER Nº:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="214" y="72" width="254" height="20" isRemoveLineWhenBlank="true" uuid="e6790fac-18ba-42c2-ad3c-a0a1b2f171a1"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroDocumento}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="92" width="159" height="20" isRemoveLineWhenBlank="true" uuid="342f7f58-3ac6-4815-a9a0-f31881d1d1ba"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[EMENTA:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="50" y="92" width="418" height="20" isRemoveLineWhenBlank="true" uuid="25ca3dd8-6f5c-4434-85ce-07deced8a5a5"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ementa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="136" y="173" width="212" height="20" isRemoveLineWhenBlank="true" uuid="c01f7ba1-db79-4927-9018-92928e336bf7"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Rio de Janeiro, ]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" mode="Transparent" x="223" y="173" width="230" height="20" isRemoveLineWhenBlank="true" uuid="40819fcb-4aed-4dce-9c8c-fc9c942d3b44"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="true" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dataDocumento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="23" y="206" width="446" height="16" isRemoveLineWhenBlank="true" uuid="5a103836-443e-4059-9f0d-0ba6d994e51d">
+					<printWhenExpression><![CDATA[($F{assinado} == "true")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomeResponsavel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="23" y="222" width="446" height="16" isRemoveLineWhenBlank="true" uuid="0742eb38-850a-4a3d-bc2e-1f2819cd7d22">
+					<printWhenExpression><![CDATA[($F{assinado} == "true")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="256" y="238" width="212" height="20" isRemoveLineWhenBlank="true" uuid="01a5cba0-07cc-4de8-a28d-72606b6fcecf">
+					<printWhenExpression><![CDATA[($F{assinado} == "true")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{matricula}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="33" y="238" width="223" height="20" isRemoveLineWhenBlank="true" uuid="9844b9c0-75e7-47c8-8d83-a64a24b1bbae">
+					<printWhenExpression><![CDATA[($F{assinado} == "true")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Verdana" size="10" isBold="false" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[MATRÍCULA: ]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="-8" y="122" width="476" height="35" isRemoveLineWhenBlank="true" uuid="fe6956c5-de24-4b33-89f2-4c78e4bae359"/>
+				<box topPadding="10" leftPadding="10" bottomPadding="10" rightPadding="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="Verdana" size="10" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{textoPrincipal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+</jasperReport>

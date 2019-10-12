@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="oficio-ie-curso-nao-cadastrado" pageWidth="595" pageHeight="842" columnWidth="468" leftMargin="85" rightMargin="42" topMargin="42" bottomMargin="42" uuid="418875b3-8828-4230-bf51-af493b5903cf">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="312"/>
+	<parameter name="BRASAO" class="java.io.InputStream"/>
+	<parameter name="ASSINATURA" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="assunto" class="java.lang.String">
+		<fieldDescription><![CDATA[assunto]]></fieldDescription>
+	</field>
+	<field name="enderecoDescritivo" class="java.lang.String">
+		<fieldDescription><![CDATA[enderecoDescritivo]]></fieldDescription>
+	</field>
+	<field name="oficiado" class="java.lang.String">
+		<fieldDescription><![CDATA[oficiado]]></fieldDescription>
+	</field>
+	<field name="referencia" class="java.lang.String">
+		<fieldDescription><![CDATA[referencia]]></fieldDescription>
+	</field>
+	<field name="textoPrincipal" class="java.lang.String">
+		<fieldDescription><![CDATA[textoPrincipal]]></fieldDescription>
+	</field>
+	<field name="numeroDocumento" class="java.lang.String"/>
+	<field name="dataDocumento" class="java.lang.String"/>
+	<field name="cargo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="113" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="70" width="468" height="20" uuid="12a1b0ab-7e61-41ac-abee-770d5f82bffd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO RIO DE JANEIRO-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="90" width="100" height="20" uuid="b8ebc734-f7ac-4eab-91b6-8c2dd59eb572"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CREA-RJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="468" height="20" uuid="8a692c69-0ed1-47ae-94fb-34ff50d34bce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SERVIÇO PÚBLICO FEDERAL]]></text>
+			</staticText>
+			<image>
+				<reportElement x="206" y="0" width="100" height="50" uuid="381283d0-090d-4920-95e7-ff5ed200d215"/>
+				<imageExpression><![CDATA[$P{BRASAO}]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="607" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="60" width="367" height="20" uuid="f030f0c7-7efb-41c5-b2b9-b16556067a97"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{oficiado}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="40" width="158" height="20" uuid="35c6427d-3c83-4db9-b7d0-80c523a4f6c7"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ao ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-1" y="80" width="468" height="67" uuid="a29f5e9b-8656-4ce3-b16c-6605e9c89915"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enderecoDescritivo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="154" width="403" height="20" uuid="a7a94576-6fc1-4054-a2de-c8cf4a7e1e48"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{assunto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="6" y="174" width="76" height="20" uuid="d1a93b5f-03d0-4cdf-97fc-926024c0a09b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Referência:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="77" y="174" width="390" height="20" uuid="e65b8cb2-0ec5-40da-bc4b-52d5d78a72d3"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{referencia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="6" y="154" width="61" height="20" uuid="9fe7fc5b-e130-42d7-9579-18ce31c71696"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Assunto:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="208" width="467" height="332" uuid="f5ae57f6-125d-4dc5-8181-91f137f50848"/>
+				<textElement textAlignment="Justified" markup="none">
+					<font fontName="Verdana"/>
+					<paragraph lineSpacing="1_1_2" firstLineIndent="57"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{textoPrincipal}]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center">
+				<reportElement x="64" y="540" width="350" height="39" uuid="996572c7-e5e3-44e7-b1e9-11058cdf6ca1"/>
+				<imageExpression><![CDATA[$P{ASSINATURA}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="0" width="158" height="20" uuid="f8024d14-6c77-49ac-865d-3a34898fc147"/>
+				<textElement>
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroDocumento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="20" width="286" height="20" uuid="f919a59d-e9e0-4659-b998-0d847c01425b"/>
+				<textElement textAlignment="Right">
+					<font fontName="Verdana" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dataDocumento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="579" width="467" height="28" uuid="d60042b7-ef55-4687-a7da-5512e076a0f4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Verdana" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="467" height="38" uuid="a2fa585e-86d7-4665-8467-429dd3c27afd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Verdana" size="8"/>
+				</textElement>
+				<text><![CDATA[
+Rua Buenos Aires, nº 40 - Centro - 20.070-022 - Rio de Janeiro - RJ
+crea-rj@crea-rj.org.br - www.crea-rj.org.br]]></text>
+			</staticText>
+			<line>
+				<reportElement x="46" y="10" width="372" height="1" uuid="ba0236d3-73b2-4024-a186-0b3d81827935"/>
+			</line>
+		</band>
+	</columnFooter>
+</jasperReport>

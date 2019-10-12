@@ -1,0 +1,13 @@
+.externalToolBuilders/*
+*.db
+*.class
+*.jar
+webapp/WEB-INF/classes/*
+webapp/WEB-INF/lib/*
+target/*
+.settings/*
+.classpath
+.project
+
+/target
+/target/
